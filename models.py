@@ -10,7 +10,7 @@ class Patient:
         return f"Patient ID: {self.id}, Name: {self.name}, Age: {self.age}, Diagnosis: {self.diagnosis}"
 
     def as_tuple(self):
-        return self.name, self.age, self.diagnosis, self.doctor_id
+        return (self.name, self.age, self.diagnosis, self.doctor_id)
 
 
 
@@ -24,6 +24,6 @@ class Doctor:
         return f"{self.name} ({self.specialty})"
 
     def as_tuple(self):
-        return self.name, self.specialty
+        return (self.name, self.specialty)
 
 
