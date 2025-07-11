@@ -21,7 +21,7 @@ class Doctor:
         self.specialty = specialty
 
     def __str__(self):
-        return f"{self.name} ({self.specialty})"
+        return f"Name: {self.name}, Specialty: {self.specialty}"
 
     def as_tuple(self):
         return (self.name, self.specialty)
